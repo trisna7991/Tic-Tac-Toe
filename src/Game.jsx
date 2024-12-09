@@ -9,7 +9,7 @@ function Square ({value, onClickSquare}) {
 
 
 
-function App({xIsNext,squares,onPlay}) {
+function Board({xIsNext,squares,onPlay}) {
 
   function handleClick (i) {
 
@@ -100,7 +100,7 @@ export default function Game () {
   return (
     <div className='game'>
       <div className='board-name'>
-        <App xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className='game-info'>
         <ol>
